@@ -5,5 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+/* GET cadastrar page. */
+router.get('/cadastro', function(req, res, next) {
+  res.render('cadastro', { title: 'Express' });
+});
 
 module.exports = router;
