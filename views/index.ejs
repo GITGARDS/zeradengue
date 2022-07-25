@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title><%= title %></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/saude.png" type="image/x-icon">
+    
+
+
     <link rel="stylesheet" href="/stylesheets/normalize.css" />
     <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title>Login</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -18,7 +27,7 @@
             <h1 class="titulo">Entrar</h1>
 
             <div class="form-group">
-              <label for="email"  class="label">Email</label>
+              <label for="email" class="label">Email</label>
               <input
                 type="email"
                 class="form-control"
@@ -28,18 +37,15 @@
             </div>
             <div class="form-group">
               <label for="senha" class="label">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="senha"
-              />
+              <input type="password" class="form-control" id="senha" />
             </div>
 
             <button type="submit" class="btn btn-primary">Entrar</button>
-            <button type="button" class="btn btn-info btn-cadastrar">Cadastrar</button>
+            <button type="button" class="btn btn-info btn-cadastrar">
+              Cadastrar
+            </button>
 
-            <a href="#" class="link-esqueci-senha" >Esqueci minha senha</a>
-
+            <a href="#" class="link-esqueci-senha">Esqueci minha senha</a>
           </form>
         </div>
       </div>
