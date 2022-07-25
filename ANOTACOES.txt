@@ -19,3 +19,6 @@ projeto
 express teste --ejs  	- gera o projeto
 npm install     	- gera node
 
+-----------------------------
+
+https://www.youtube.com/watch?v=E7DbVgWCkWI&list=PLUxrX6EvA-2aMiGnAk1sbMCuc5FE1mscK&index=9&ab_channel=AlessandroDev
