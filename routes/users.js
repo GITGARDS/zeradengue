@@ -17,8 +17,8 @@ router.get('/denuncia/:id', function(req, res, next) {
 });
 
 /* GET nova usuario-upate. */
-router.get('/user/:id', function(req, res, next) {
-  res.render('usuario/user-update');
+router.get('/perfil', function(req, res, next) {
+  res.render('usuario/perfil');
 });
 
 module.exports = router;
