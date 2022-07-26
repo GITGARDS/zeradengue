@@ -140,7 +140,7 @@ body {
   padding-right: 1vw;
 }
 
-.main{
+.main {
   position: fixed;
   top: 16.5vh;
   overflow: scroll;
@@ -180,4 +180,73 @@ body {
   padding: 2vh 0 0 2vh;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+
+/* denuncia */
+
+.main-denuncia {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 16.5vh;
+  overflow: hidden;
+  height: 77vh;
+}
+
+.sessao-denuncia .imagem {
+  width: 100%;
+  height: 23vh;
+  background-color: var(--secondary-text-color);
+  border-radius: 7px 7px 0px 0px;
+  margin-bottom: 3vh;
+  text-align: center;
+  color: var(--text-primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sessao-denuncia .imagem .icone-camera {
+  font-size: 5em;
+}
+
+.sessao-denuncia .imagem .imagem-importada {
+  display: none;
+}
+
+.sessao-denuncia input[type="text"] {
+  height: 5vh;
+  border-radius: 5px;
+  border: 2px solid var(--dark-primary-color);
+  padding-left: 1vw;
+}
+
+.sessao-denuncia input[type="submit"] {
+  width: 100%;
+  height: 5vh;
+}
+
+.btn-voltar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5vh;
+  margin-top: 1vh;
+  border-radius: 5px;
+  border: 2px solid var(--dark-primary-color);
+  padding: 2vh;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.btn-voltar .texto {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-voltar:hover {
+  text-decoration: none;
 }
