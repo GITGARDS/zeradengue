@@ -18,8 +18,13 @@ https://github.com/GITGARDS/zeradengue.git
 projeto
 express teste --ejs  	- gera o projeto
 npm install     	- gera node
+npm install mysql2 --save
+npm install sequelize --save
+npm install sequelize-cli --save
+npm install dotenv --save
 
+npx sequelize init:models
+sequelize-auto -o "./models" -d nomeDoShema -h localhost -u usuarioDaConexao -p 3306 -x senhaDaConexao -e mysql
 -----------------------------
 
-https://www.youtube.com/watch?v=3aczxgtxA0I&list=PLUxrX6EvA-2aMiGnAk1sbMCuc5FE1mscK&index=18&ab_channel=AlessandroDev
-5:25
+https://www.youtube.com/watch?v=OQnRJ86crIc&list=PLUxrX6EvA-2aMiGnAk1sbMCuc5FE1mscK&index=21&ab_channel=AlessandroDev
