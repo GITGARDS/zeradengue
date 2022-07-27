@@ -46,11 +46,11 @@ descricao		varchar(50) not null,
 endereco		varchar(80) not null,
 bairro   		varchar(80) not null,
 data_hora   	timestamp not null default current_timestamp(),
-usuario_id			int not null,
+usuarios_id			int not null,
 status_id			int not null default 1,
 cidades_id			int not null,
 primary key (id),
-constraint fk_ocorrencias_usuario_id foreign key (usuario_id) references usuarios(id),
+constraint fk_ocorrencias_usuarios_id foreign key (usuarios_id) references usuarios(id),
 constraint fk_ocorrencias_status_id foreign key (status_id) references status(id),
 constraint fk_ocorrencias_cidades_id foreign key (cidades_id) references cidades(id)
 );

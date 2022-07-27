@@ -1,75 +1,76 @@
-/* jshint indent: 2 */
+"use strict";
 
-module.exports = function (sequelize, DataTypes) {
-  return sequelize.define(
-    "Ocorrencia",
-    {
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable("ocorrencias", {
+      id: Sequelize.INTEGER,
+
       id: {
-        type: DataTypes.INTEGER(11),
+        type: Sequelize.INTEGER(11),
         allowNull: false,
         primaryKey: true,
         comment: "null",
         autoIncrement: true,
       },
       imagem: {
-        type: DataTypes.STRING(200),
+        type: Sequelize.STRING(200),
         allowNull: false,
         defaultValue: "no_image.png",
         comment: "null",
       },
       descricao: {
-        type: DataTypes.STRING(50),
+        type: Sequelize.STRING(50),
         allowNull: false,
         comment: "null",
       },
       endereco: {
-        type: DataTypes.STRING(80),
+        type: Sequelize.STRING(80),
         allowNull: false,
         comment: "null",
       },
       bairro: {
-        type: DataTypes.STRING(80),
+        type: Sequelize.STRING(80),
         allowNull: false,
         comment: "null",
       },
       data_hora: {
-        type: DataTypes.DATE,
+        type: Sequelize.DATE,
         allowNull: false,
-        defaultValue: sequelize.fn("current_timestamp"),
+        defaultValue: Sequelize.fn("current_timestamp"),
         comment: "null",
       },
       usuarios_id: {
-        type: DataTypes.INTEGER(11),
+        type: Sequelize.INTEGER(11),
         allowNull: false,
         comment: "null",
         references: {
-          model: "Usuario",
+          model: "usuarios",
           key: "id",
         },
       },
       status_id: {
-        type: DataTypes.INTEGER(11),
+        type: Sequelize.INTEGER(11),
         allowNull: false,
         defaultValue: "1",
         comment: "null",
         references: {
-          model: "Status",
+          model: "status",
           key: "id",
         },
       },
       cidades_id: {
-        type: DataTypes.INTEGER(11),
+        type: Sequelize.INTEGER(11),
         allowNull: false,
         comment: "null",
         references: {
-          model: "Cidade",
+          model: "cidades",
           key: "id",
         },
       },
-    },
-    {
-      tableName: "ocorrencias",
-      timestamps: false,
-    }
-  );
+    });
+  },
+
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("ocorrencias");
+  },
 };
