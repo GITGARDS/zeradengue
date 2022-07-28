@@ -27,4 +27,4 @@ npx sequelize init:models
 sequelize-auto -o "./models" -d nomeDoShema -h localhost -u usuarioDaConexao -p 3306 -x senhaDaConexao -e mysql
 -----------------------------
 
-https://www.youtube.com/watch?v=OQnRJ86crIc&list=PLUxrX6EvA-2aMiGnAk1sbMCuc5FE1mscK&index=21&ab_channel=AlessandroDev
+https://www.youtube.com/watch?v=u6g8E7fkN8k&list=PLUxrX6EvA-2aMiGnAk1sbMCuc5FE1mscK&index=26&ab_channel=AlessandroDev

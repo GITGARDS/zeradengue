@@ -26,4 +26,7 @@ router.post(
   userController.save
 );
 
+// USUARIO LOGIN
+router.post("/login", userController.login);
+
 module.exports = router;
